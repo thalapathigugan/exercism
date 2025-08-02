@@ -340,10 +340,10 @@ padding-left: 2%;
   position: absolute;
   left:0;
   right: 0;
-  height: 1em;      /* Or whatever fits your underline SVG */
-  bottom: -0.43em;      /* Move it just below the text */
+  height: 1em;
+  bottom: -0.43em;
   display: block;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22212%20360%20180%2020%22%20fill%3D%22none%22%20width%3D%22100%22%20height%3D%2220%22%3E%3Cpath%20d%3D%22M212.80957251414657%20367.17009938135743%20C275.40007076344386%20366.33588783645087%2C%20338.0997570925751%20367.79098873042517%2C%20390.0176703296602%20370.10168624296784%22%20fill%3D%22none%22%20stroke%3D%22%233F3A5A%22%20stroke-width%3D%222%22/%3E%3C/svg%3E"); /* your SVG */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22212%20360%20180%2020%22%20fill%3D%22none%22%20width%3D%22100%22%20height%3D%2220%22%3E%3Cpath%20d%3D%22M212.80957251414657%20367.17009938135743%20C275.40007076344386%20366.33588783645087%2C%20338.0997570925751%20367.79098873042517%2C%20390.0176703296602%20370.10168624296784%22%20fill%3D%22none%22%20stroke%3D%22%233F3A5A%22%20stroke-width%3D%222%22/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -364,7 +364,7 @@ padding-left: 2%;
   display: block;
   position: absolute;
   left: 0; right: 0;
-  height: 0.5em;         /* Adjust based on your SVG and font */
+  height: 0.5em;
   bottom: -0.2em;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='279 144 194 4' fill='none' width='100' height='10'%3E%3Cpath d='M279.15 144.52C356.54 144.26,427.90 146.17,472.88 147.96' fill='none' stroke='%233F3A5A' stroke-width='4'/%3E%3C/svg%3E");
   background-size: 100% 100%;
@@ -1064,8 +1064,8 @@ footer {
   font-size:16px;
 }
 
-.col-end-para h3 {
-  margin-bottom: 12px;
+.col-end-para h4 {
+  margin-bottom: 22px !important;
 }
 
 .middle-footer-h {
@@ -1407,8 +1407,6 @@ img, .head-logo img, .info-div-logo img, .mentoring-img, .img-div img, .main-gra
   }
   .sign-btn,
   .log-in-btn,
-  .div-sign-btn,
-  .div-log-in-btn,
   .signup-button,
   .explore-button {
     font-size: 16px;
@@ -1719,14 +1717,7 @@ img, .head-logo img, .info-div-logo img, .mentoring-img, .img-div img, .main-gra
     line-height: 120%;
 
   }
-  .btn-div {
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    gap: 4px;
-    justify-content: center;
-    align-items: center;
-  }
+  
   
 
   .para-div {
@@ -1764,16 +1755,6 @@ img, .head-logo img, .info-div-logo img, .mentoring-img, .img-div img, .main-gra
   }
 
 
-  .div-sign-btn,
-  .div-log-in-btn {
-    margin: 6px 0 !important;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 58px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 640px) {
@@ -1787,6 +1768,27 @@ img, .head-logo img, .info-div-logo img, .mentoring-img, .img-div img, .main-gra
 
   .track-div {
     grid-template-columns: repeat(3, minmax(0,3fr)) !important;
+  }
+
+  .btn-div {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .div-sign-btn,
+  .div-log-in-btn {
+    margin: 6px 0 !important;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 58px;
+    align-items: center;
   }
 }
 
